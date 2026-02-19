@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import { Heart, Shield, Lightbulb, TrendingUp, Check } from 'lucide-react'
+import { Heart, Shield, Lightbulb, TrendingUp } from 'lucide-react'
+import Downloadsection from '@/components/Downloadsection'
 
 const values = [
   {
@@ -26,22 +26,6 @@ const values = [
     description:
       'We use cutting-edge technology and innovative strategies to solve complex debt situations effectively.',
   },
-]
-
-const stats = [
-  { number: '50,000+', label: 'Lives Changed', highlight: true },
-  { number: '₹2000+ Cr', label: 'Successfully Resolved' },
-  { number: '98.5%', label: 'Client Success Rate' },
-  { number: '15+', label: 'Years of Excellence' },
-]
-
-const milestones = [
-  { year: '2009', title: 'Founded', description: 'Debt Mukti established with a mission to revolutionize debt management' },
-  { year: '2012', title: 'Expansion', description: 'Opened operations across 10 major cities with specialized teams' },
-  { year: '2016', title: 'Recognition', description: 'Awarded "Best Debt Management Service" by Financial India Awards' },
-  { year: '2020', title: 'Digital Innovation', description: 'Launched AI-powered debt analysis and online consultation platform' },
-  { year: '2023', title: 'Market Leader', description: 'Became the most trusted debt resolution company in India' },
-  { year: '2024', title: 'Global Reach', description: 'Expanded to international markets with 100+ expert counselors' },
 ]
 
 const teamRoles = [
@@ -86,7 +70,7 @@ export default function AboutPage() {
           {values.map((value, index) => {
             const Icon = value.icon
             return (
-              <div key={index} className="bg-primary-light-blue rounded-[40px] p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+              <div key={index} className="bg-primary-light-blue rounded-[24px] p-8 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                 <div className="text-primary mb-6 bg-secondary rounded-lg w-fit p-4">
                   <Icon size={32} />
                 </div>
@@ -101,13 +85,13 @@ export default function AboutPage() {
       {/* Mission Statement */}
       <section className="">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
-          <div className="text-center space-y-4 bg-primary-blue rounded-[40px] p-10">
+          <div className="text-center space-y-4 bg-primary-blue rounded-[24px] p-10">
             <div className="text-4xl font-bold text-white">Our Mission</div>
             <p className=" opacity-80 text-white leading-relaxed">
               To empower individuals to break free from debt through expert guidance, transparent processes, and compassionate support.
             </p>
           </div>
-          <div className="text-center space-y-4 bg-primary-blue rounded-[40px] p-10">
+          <div className="text-center space-y-4 bg-primary-blue rounded-[24px] p-10">
             <div className="text-4xl font-bold text-white">Our Vision</div>
             <p className=" opacity-80 text-white leading-relaxed">
               A world where financial stress doesn't dictate life choices and everyone has access to affordable debt resolution services.
@@ -122,7 +106,7 @@ export default function AboutPage() {
      
 
       {/* Team Section - Enhanced */}
-      <section className="bg-opacity-20 py-20 lg:py-28">
+      <section className="bg-opacity-20 py-20 ">
         <div className="">
           <div className="text-center mb-16">
           <div className="flex justify-center">
@@ -138,7 +122,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamRoles.map((team, index) => (
-              <div key={index} className="bg-primary-light-blue rounded-[40px] p-8 text-center shadow-lg">
+              <div key={index} className="bg-primary-light-blue rounded-[24px] p-8 text-center shadow-lg">
                 <div className="text-4xl font-bold text-primary mb-2">{team.count}</div>
                 <h3 className="text-lg font-bold text-primary mb-2">{team.role}</h3>
                 <p className="text-sm text-foreground opacity-80">{team.description}</p>
@@ -150,22 +134,9 @@ export default function AboutPage() {
 
  
 
-      {/* CTA Section */}
-      <section className="bg-primary-blue bg-opacity-40 py-16 lg:py-24 rounded-[40px] px-5">
-        <div className=" text-center space-y-6 ">
-          <h2 className="text-3xl lg:text-4xl font-bold text-primary text-white">Ready to Start Your Journey?</h2>
-          <p className="text-lg text-white opacity-80">
-            Join thousands of Indians who've reclaimed their financial freedom with Debt Mukti. Schedule your free consultation today.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-primary-light-blue text-black px-8 py-4 rounded-lg font-bold hover:opacity-90 transition-opacity"
-          >
-            Get Free Consultation
-          </Link>
-        </div>
-      </section>
+      
 
+      <Downloadsection title="Ready to Start Your Journey?" description="Join thousands of Indians who've reclaimed their financial freedom with Debt Mukti. Schedule your free consultation today." buttonText="Get Free Consultation" buttonLink="/contact" ismaxWidth={false} />
     </main>
   )
 }

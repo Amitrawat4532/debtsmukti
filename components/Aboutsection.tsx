@@ -37,8 +37,7 @@ export default function WhyDebtMukti() {
   const mobileCardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const outerRef = useRef<HTMLDivElement>(null);
 
-  // Active card refs depending on current mode
-  const cardRefs = isMobile ? mobileCardRefs : desktopCardRefs;
+  
 
   // ── Mobile detection ───────────────────────────────────────────
   useEffect(() => {
@@ -185,7 +184,7 @@ export default function WhyDebtMukti() {
                     key={i}
                     ref={(el) => { mobileCardRefs.current[i] = el; }}
                     onClick={() => handleClick(i)}
-                    className={`rounded-[20px] border px-[24px] py-[20px] cursor-pointer transition-all duration-200 ${
+                    className={`rounded-[24px] border px-[24px] py-[20px] cursor-pointer transition-all duration-200 ${
                       activeIndex === i
                         ? "bg-primary-light-blue border-primary-light-blue"
                         : "bg-[#E5E5E5] border-[#e5e7eb] hover:border-[#c5d0ea]"

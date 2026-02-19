@@ -33,7 +33,7 @@ const Howitswork = () => {
       A simple, stress-free process designed to get you out of debt faster.
       </h3>
     </div>
-    <div className='relative w-full h-[420px] rounded-[20px] overflow-hidden'>
+    <div className='relative w-full h-[420px] rounded-[24px] overflow-hidden'>
         <Image src="/howitsworks.png" alt="how-it-work" fill className='object-cover' />
     </div>
     <div className='flex gap-5 flex-col md:flex-row'>

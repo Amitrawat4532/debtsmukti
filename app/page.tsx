@@ -1,6 +1,7 @@
 import Aboutsection from "@/components/Aboutsection";
 import Achievement from "@/components/Achievement";
 import Banner from "@/components/Banner";
+import BlogsSection from "@/components/BlogsSection";
 import Downloadsection from "@/components/Downloadsection";
 import Howitswork from "@/components/Howitswork";
 import Services from "@/components/Services";
@@ -15,8 +16,8 @@ export default function Home() {
       <Services />
       <Testimonials />
       <Howitswork />
-      <Downloadsection />
-
+      <Downloadsection title="Download Your Credit Report from Experian" description="The first step to financial planning starts right here. Always check your credit score!" buttonText="Download Report" buttonLink="/download" ismaxWidth={true} />
+    <BlogsSection isHidden={false} />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Download, FileText } from 'lucide-react'
+import Downloadsection from '@/components/Downloadsection'
 
 const contracts = [
   {
@@ -59,7 +60,7 @@ export default function ContractsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {contracts.map((contract, index) => (
-            <div key={index} className="border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+            <div key={index} className="border border-border rounded-[24px] p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4">
                 <div className="text-primary shrink-0 mt-1">
                   <FileText size={32} />
@@ -82,21 +83,9 @@ export default function ContractsPage() {
       </section>
 
 
-      {/* CTA Section */}
-      <section className="bg-primary-light-blue text-primary-foreground py-16 lg:py-24 rounded-[40px]">
-        <div className="max-w-7xl mx-auto px-6 text-center space-y-6">
-          <h2 className="text-3xl lg:text-4xl font-bold text-balance">Need Clarification?</h2>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto">
-            Our legal and financial experts are ready to explain any terms and help you understand your agreements.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-primary-blue text-white px-8 py-3 rounded-full font-bold hover:opacity-90 transition-opacity"
-          >
-            Contact Our Experts
-          </Link>
-        </div>
-      </section>
+      
+      <Downloadsection title="Need Clarification?" description="            Our legal and financial experts are ready to explain any terms and help you understand your agreements.
+" buttonText="Contact Our Experts" buttonLink="/contact" ismaxWidth={false} />
     </main>
   )
 }

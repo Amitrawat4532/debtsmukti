@@ -1,57 +1,58 @@
+import Downloadsection from '@/components/Downloadsection'
 import Link from 'next/link'
-import { CreditCard, Lock, CheckCircle } from 'lucide-react'
+// import { CreditCard, Lock, CheckCircle } from 'lucide-react'
 
-const paymentMethods = [
-  {
-    icon: CreditCard,
-    title: 'Credit/Debit Card',
-    description: 'Secure payment via Visa, Mastercard, American Express, and other major cards.',
-  },
-  {
-    icon: CreditCard,
-    title: 'Bank Transfer',
-    description: 'Direct bank transfer for larger payments with reduced processing fees.',
-  },
-  {
-    icon: CreditCard,
-    title: 'Digital Wallets',
-    description: 'Fast and convenient payments through Apple Pay, Google Pay, and other digital wallets.',
-  },
-  {
-    icon: CreditCard,
-    title: 'EMI Options',
-    description: 'Flexible installment plans to distribute your consultation and service fees.',
-  },
-]
+// const paymentMethods = [
+//   {
+//     icon: CreditCard,
+//     title: 'Credit/Debit Card',
+//     description: 'Secure payment via Visa, Mastercard, American Express, and other major cards.',
+//   },
+//   {
+//     icon: CreditCard,
+//     title: 'Bank Transfer',
+//     description: 'Direct bank transfer for larger payments with reduced processing fees.',
+//   },
+//   {
+//     icon: CreditCard,
+//     title: 'Digital Wallets',
+//     description: 'Fast and convenient payments through Apple Pay, Google Pay, and other digital wallets.',
+//   },
+//   {
+//     icon: CreditCard,
+//     title: 'EMI Options',
+//     description: 'Flexible installment plans to distribute your consultation and service fees.',
+//   },
+// ]
 
-const paymentPlans = [
-  {
-    name: 'Basic Consultation',
-    price: '₹5,000',
-    description: 'Initial debt analysis and personalized consultation',
-    features: ['Debt Assessment', 'Financial Review', '1-on-1 Consultation', 'Recommendations'],
-  },
-  {
-    name: 'Settlement Package',
-    price: '₹25,000',
-    description: 'Complete debt settlement negotiation and support',
-    features: ['Full Assessment', 'Creditor Negotiation', 'Legal Support', '6-Month Support', 'Settlement Closure'],
-    highlight: true,
-  },
-  {
-    name: 'Premium Package',
-    price: '₹50,000',
-    description: 'Comprehensive debt resolution with ongoing support',
-    features: [
-      'Complete Assessment',
-      'Multi-Creditor Negotiation',
-      'Legal Protection',
-      '12-Month Support',
-      'Anti-Harassment Support',
-      'Settlement Verification',
-    ],
-  },
-]
+// const paymentPlans = [
+//   {
+//     name: 'Basic Consultation',
+//     price: '₹5,000',
+//     description: 'Initial debt analysis and personalized consultation',
+//     features: ['Debt Assessment', 'Financial Review', '1-on-1 Consultation', 'Recommendations'],
+//   },
+//   {
+//     name: 'Settlement Package',
+//     price: '₹25,000',
+//     description: 'Complete debt settlement negotiation and support',
+//     features: ['Full Assessment', 'Creditor Negotiation', 'Legal Support', '6-Month Support', 'Settlement Closure'],
+//     highlight: true,
+//   },
+//   {
+//     name: 'Premium Package',
+//     price: '₹50,000',
+//     description: 'Comprehensive debt resolution with ongoing support',
+//     features: [
+//       'Complete Assessment',
+//       'Multi-Creditor Negotiation',
+//       'Legal Protection',
+//       '12-Month Support',
+//       'Anti-Harassment Support',
+//       'Settlement Verification',
+//     ],
+//   },
+// ]
 
 export default function PaymentsPage() {
   return (
@@ -157,7 +158,7 @@ export default function PaymentsPage() {
         <h2 className="text-3xl font-bold text-primary mb-12 text-center">Frequently Asked Questions</h2>
 
         <div className="space-y-6">
-          <div className="border border-border rounded-lg p-6">
+          <div className="border border-border rounded-[24px] p-6">
             <h3 className="text-lg font-bold text-primary mb-2">Is there a free consultation?</h3>
             <p className="text-foreground opacity-80">
               Yes, we offer a free initial consultation to assess your situation. Any consultation beyond the initial one
@@ -165,7 +166,7 @@ export default function PaymentsPage() {
             </p>
           </div>
 
-          <div className="border border-border rounded-lg p-6">
+          <div className="border border-border rounded-[24px] p-6">
             <h3 className="text-lg font-bold text-primary mb-2">Can I get a refund if I'm not satisfied?</h3>
             <p className="text-foreground opacity-80">
               We offer a 30-day satisfaction guarantee. If you're not satisfied with our services, contact us for a full
@@ -173,7 +174,7 @@ export default function PaymentsPage() {
             </p>
           </div>
 
-          <div className="border border-border rounded-lg p-6">
+          <div className="border border-border rounded-[24px] p-6">
             <h3 className="text-lg font-bold text-primary mb-2">Are there additional fees?</h3>
             <p className="text-foreground opacity-80">
               Our packages include all standard services. Any special requests or additional services will be discussed with
@@ -181,7 +182,7 @@ export default function PaymentsPage() {
             </p>
           </div>
 
-          <div className="border border-border rounded-lg p-6">
+          <div className="border border-border rounded-[24px] p-6">
             <h3 className="text-lg font-bold text-primary mb-2">Can I upgrade my plan later?</h3>
             <p className="text-foreground opacity-80">
               Yes, you can upgrade to a higher plan at any time. We'll credit your existing payment towards the upgraded plan.
@@ -190,22 +191,9 @@ export default function PaymentsPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-primary-light-blue text-black py-16 lg:py-24 rounded-[40px]">
-        <div className="max-w-7xl mx-auto px-6 text-center space-y-6">
-          <h2 className="text-3xl lg:text-4xl font-bold text-balance text-black">Ready to Get Started?</h2>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto text-black">
-            Choose your plan and take the first step towards financial freedom today.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-primary-blue text-white px-8 py-3 rounded-full font-bold hover:opacity-90 transition-opacity"
-          >
-            Get Your Consultation Today
-          </Link>
-        </div>
-      </section>
+      
 
+      <Downloadsection title="Ready to Get Started?" description="Choose your plan and take the first step towards financial freedom today." buttonText="Get Your Consultation Today" buttonLink="/contact" ismaxWidth={false} />
     </main>
   )
 }

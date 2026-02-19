@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { CheckCircle, Briefcase, BarChart3, ArrowRight, Shield, Clock, Zap } from 'lucide-react'
+import Testimonials from '@/components/Testimonials'
+import Downloadsection from '@/components/Downloadsection'
 
 const services = [
   {
@@ -59,26 +61,6 @@ const processSteps = [
   },
 ]
 
-const testimonials = [
-  {
-    name: 'Raj Kumar',
-    role: 'Business Owner',
-    quote: 'Debt Mukti helped me settle ₹15 lakhs in just 8 months. The entire process was seamless and stress-free.',
-    savings: '₹7+ Lakhs Saved',
-  },
-  {
-    name: 'Priya Sharma',
-    role: 'Corporate Professional',
-    quote: 'After struggling with multiple loans, Debt Mukti consolidated everything into one manageable payment.',
-    savings: '₹4.5 Lakhs Saved',
-  },
-  {
-    name: 'Amit Patel',
-    role: 'Entrepreneur',
-    quote: 'The legal support team protected me from harassment. Now I can focus on my business without stress.',
-    savings: '₹6 Lakhs Saved',
-  },
-]
 
 export default function ServicesPage() {
   return (
@@ -115,7 +97,7 @@ export default function ServicesPage() {
           {services.map((service, index) => {
             const Icon = service.icon
             return (
-              <div key={index} className="bg-primary-light-blue rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1">
+              <div key={index} className="bg-primary-light-blue rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1">
                 <div className="text-primary mb-6 bg-secondary rounded-lg w-fit p-4">
                   <Icon size={32} />
                 </div>
@@ -142,8 +124,8 @@ export default function ServicesPage() {
       </section>
 
       {/* Process Section - Enhanced */}
-      <section className=" bg-opacity-40 py-20 ">
-        <div className=" mx-auto px-6">
+      <section className=" bg-opacity-40 py-20 mb-20 ">
+        <div className=" mx-auto">
           <div className="text-center mb-20">
           <div className="flex justify-center">
               <span className="text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-[16px] py-[6px] rounded-full w-fit">
@@ -161,7 +143,7 @@ export default function ServicesPage() {
               const StepIcon = step.icon
               return (
                 <div key={index} className="relative">
-                  <div className="bg-primary-blue rounded-xl p-8 h-full">
+                  <div className="bg-primary-blue rounded-[24px] p-8 h-full">
                     <div className=" rounded-lg w-fit p-3 mb-6 flex gap-2">
                       <div className="text-white text-2xl font-bold">{step.number}</div>
                       <StepIcon size={32} className="text-white" />
@@ -181,61 +163,13 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className=" mx-auto py-20 lg:py-28">
-        <div className="text-center mb-16">
-        <div className="flex justify-center">
-              <span className="text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-[16px] py-[6px] rounded-full w-fit">
-                Testimonials
-              </span>
-            </div>
-          <h2 className="text-3xl lg:text-5xl font-bold text-primary text-balance mb-4">What Our Clients Say</h2>
-          <p className="text-lg text-foreground opacity-80 max-w-2xl mx-auto">
-            Real stories from people who've regained their financial freedom
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-xl p-8 shadow-lg border-l-4 border-primary-blue">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-primary-blue flex items-center justify-center font-bold text-white">
-                  {testimonial.name.charAt(0)}
-                </div>
-                <div>
-                  <p className="font-bold text-primary">{testimonial.name}</p>
-                  <p className="text-sm text-foreground opacity-70">{testimonial.role}</p>
-                </div>
-              </div>
-              <p className="text-foreground leading-relaxed italic mb-4">"{testimonial.quote}"</p>
-              <div className="bg-secondary rounded-lg p-3 text-center">
-                <p className="text-sm font-semibold text-primary">{testimonial.savings}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+     
+      <Testimonials />
 
 
-      {/* CTA Section */}
-      <section className="bg-primary-light-blue bg-opacity-40 py-16 lg:py-24 rounded-[40px]">
-        <div className=" mx-auto px-6 text-center space-y-6 ">
-          <h2 className="text-3xl lg:text-4xl font-bold text-primary text-balance">Start Your Debt Freedom Journey Today</h2>
-          <p className="text-lg text-foreground opacity-80">
-            Schedule a free consultation with our debt experts. No obligation, just honest guidance tailored to your situation.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className=" bg-primary-blue text-white text-center px-8 py-2 rounded-full font-bold hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
-            >
-              Get Free Consultation<ArrowRight size={18} />
-            </Link>
-            
-          </div>
-        </div>
-      </section>
-
+    <div className='mt-30'>
+      <Downloadsection title="Start Your Debt Freedom Journey Today" description="Schedule a free consultation with our debt experts. No obligation, just honest guidance tailored to your situation." buttonText="Get Free Consultation" buttonLink="/contact" ismaxWidth={false} />
+    </div>
     </main>
   )
 }

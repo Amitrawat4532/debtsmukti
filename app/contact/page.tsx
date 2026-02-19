@@ -47,7 +47,7 @@ export default function ContactPage() {
       {/* Contact Information & Form */}
       <section className=" mx-auto  py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-3 gap-12">
         {/* Contact Info */}
-        <div className="lg:col-span-1 space-y-8 bg-primary-light-blue bg-opacity-30 rounded-[40px] p-8">
+        <div className="lg:col-span-1 space-y-8 bg-primary-light-blue bg-opacity-30 rounded-[24px] p-8">
           <div>
             <h3 className="text-2xl font-bold text-primary mb-8">Contact Information</h3>
 
@@ -103,7 +103,7 @@ export default function ContactPage() {
 
         {/* Contact Form */}
         <div className="lg:col-span-2">
-          <div className="bg-primary-blue bg-opacity-30 rounded-[40px] p-8">
+          <div className="bg-primary-blue bg-opacity-30 rounded-[24px] p-8">
             <h3 className="text-2xl font-bold text-white mb-6">Send us a Message</h3>
 
             {submitted && (
@@ -203,7 +203,7 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                className="w-full bg-primary-light-blue text-black  py-3 rounded-lg font-bold hover:opacity-90 transition-opacity"
+                className="w-full bg-primary-light-blue text-black  py-3 rounded-[24px] font-bold hover:opacity-90 transition-opacity"
               >
                 Send Message
               </button>

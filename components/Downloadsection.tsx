@@ -1,7 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
-const Downloadsection = () => {
+
+
+const Downloadsection = ({title, description, buttonText, buttonLink,ismaxWidth}: {title: string, description: string, buttonText: string, buttonLink: string,ismaxWidth: boolean}) => {
   return (
     <section className='relative bg-primary-blue px-5 py-[50px] md:py-[100px] flex flex-col gap-7 rounded-[40px] overflow-hidden min-h-[500px] md:min-h-[400px] justify-center items-center'>
         {/* Top-left decorative SVG */}
@@ -16,16 +19,16 @@ const Downloadsection = () => {
         </div>
 
         {/* Content */}
-        <h2 className='text-[38px] font-semibold text-[#ffffff] text-center leading-[46px] relative z-10'>
-          Download Your Credit <br  className='md:block hidden'/>Report from Experian
+        <h2 className={`text-[38px] font-semibold text-[#ffffff] text-center leading-[46px] relative z-10 ${ismaxWidth ? 'max-w-none md:max-w-[500px]' : ''}`}>
+          {title}
         </h2>
-        <p className='text-[18px] text-[#e4e4e4] text-center leading-[28px] relative z-10'>
-          <span>&quot;</span>The first step to financial planning starts right here.<br className='md:block hidden' /> Always check your credit score!<span>&quot;</span>
+        <p className={`text-[18px] text-[#e4e4e4] text-center leading-[28px] relative z-10 ${ismaxWidth ? 'max-w-none md:max-w-[500px]' : ''}`}>
+          {description}
         </p>
         <div className='flex justify-center items-center relative z-10'>
-            <button className='bg-primary-light-blue text-[#111] px-6 py-[14px] rounded-[10px] text-[18px] font-semibold hover:bg-opacity-90 transition-all'>
-              Download Report
-            </button>
+            <Link href={buttonLink} className='bg-primary-light-blue text-[#111] px-6 py-[14px] rounded-[10px] text-[18px] font-semibold hover:bg-opacity-90 transition-all'>
+              {buttonText}
+            </Link>
         </div>
 
         {/* Bottom-right decorative SVG */}
