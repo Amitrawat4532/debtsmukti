@@ -1,0 +1,9 @@
+[00:00:00.963] Server  LOG     ✓ Ready in 741ms
+[00:00:11.207] Server  LOG     ○ Compiling /studio/[[...tool]] ...
+[00:00:13.195] Server  ERROR   ⨯ TypeError: chunk.reason.enqueueModel is not a function
+[00:00:13.402] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:14.988] Browser WARN    Image with src "/rbiimg.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:14.988] Browser WARN    Image with src "/logofooter.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:14.988] Browser WARN    Image with src "/logoheader.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:14.988] Browser WARN    Image with src "/logofooter.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* Brand Colors */
+  --primary-blue: #0F2A47;
+  --primary-light-blue: #E3EFFF;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary-blue: var(--primary-blue);
+  --color-primary-light-blue: var(--primary-light-blue);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+   
+
+   /* Optional: adjust brand colors for dark mode if needed */
+    --primary-blue: #0F2A47;
+    --primary-light-blue: #E3EFFF;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* hey its me rohit */
+.mySwiper .swiper-slide {
+  height: auto;
+}
