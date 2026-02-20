@@ -6,7 +6,7 @@ const values = [
     icon: Heart,
     title: 'Client-Focused',
     description:
-      'We prioritize your financial wellbeing and work tirelessly to achieve the best outcomes for every client.',
+      'We jjjj prioritize your financial wellbeing and work tirelessly to achieve the best outcomes for every client.',
   },
   {
     icon: Shield,
