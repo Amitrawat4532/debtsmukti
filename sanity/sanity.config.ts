@@ -28,8 +28,5 @@ export default defineConfig({
     visionTool({defaultApiVersion: apiVersion}),
   ],
 })
-console.log("Studio dataset:", dataset)
-console.log("Studio project:", projectId)
-console.log("Frontend dataset:", dataset)
-console.log("Frontend project:", projectId)
+
 
