@@ -154,42 +154,7 @@ export default function PaymentsPage() {
       </section> */}
 
       {/* FAQ Section */}
-      <section className="max-w-4xl mx-auto  py-16 lg:py-24">
-        <h2 className="text-3xl font-bold text-primary mb-12 text-center">Frequently Asked Questions</h2>
-
-        <div className="space-y-6">
-          <div className="border border-border rounded-[24px] p-6">
-            <h3 className="text-lg font-bold text-primary mb-2">Is there a free consultation?</h3>
-            <p className="text-foreground opacity-80">
-              Yes, we offer a free initial consultation to assess your situation. Any consultation beyond the initial one
-              is covered under our Basic Consultation plan.
-            </p>
-          </div>
-
-          <div className="border border-border rounded-[24px] p-6">
-            <h3 className="text-lg font-bold text-primary mb-2">Can I get a refund if I'm not satisfied?</h3>
-            <p className="text-foreground opacity-80">
-              We offer a 30-day satisfaction guarantee. If you're not satisfied with our services, contact us for a full
-              refund, no questions asked.
-            </p>
-          </div>
-
-          <div className="border border-border rounded-[24px] p-6">
-            <h3 className="text-lg font-bold text-primary mb-2">Are there additional fees?</h3>
-            <p className="text-foreground opacity-80">
-              Our packages include all standard services. Any special requests or additional services will be discussed with
-              you upfront with transparent pricing.
-            </p>
-          </div>
-
-          <div className="border border-border rounded-[24px] p-6">
-            <h3 className="text-lg font-bold text-primary mb-2">Can I upgrade my plan later?</h3>
-            <p className="text-foreground opacity-80">
-              Yes, you can upgrade to a higher plan at any time. We'll credit your existing payment towards the upgraded plan.
-            </p>
-          </div>
-        </div>
-      </section>
+     
 
       
 

@@ -36,10 +36,10 @@ const Howitswork = () => {
     <div className='relative w-full h-[420px] rounded-[24px] overflow-hidden'>
         <Image src="/howitsworks.png" alt="how-it-work" fill className='object-cover' />
     </div>
-    <div className='flex gap-5 flex-col md:flex-row'>
+    <div className='flex gap-5 flex-col md:flex-row mt-14'>
         {steps.map((step, index) => (
             <div key={index} className='flex gap-5 '>
-                <div className='flex justify-center items-center p-10  border border-[#0F2A47] h-[100px] w-[100px] rounded-full text-[38px] font-bold text-[#0F2A47]'>{index + 1}</div>
+                <div className='flex justify-center items-center p-10  border border-[#0F2A47] h-[100px] w-[100px] rounded-full text-[38px] font-bold text-white bg-primary-blue'>{index + 1}</div>
                 <div className='flex flex-col gap-2'>
                     <h4 className='text-[20px] font-bold text-[#111]'>{step.title}</h4>
                     <p className='text-[14px] text-[#6B6969]'>{step.description}</p>
