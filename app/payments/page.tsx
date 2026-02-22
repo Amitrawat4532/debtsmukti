@@ -56,7 +56,7 @@ import Link from 'next/link'
 
 export default function PaymentsPage() {
   return (
-    <main className="min-h-screen flex flex-col px-5">
+    <main className="min-h-screen flex flex-col px-5 gap-10">
 
       {/* Hero Section */}
       <section className="bg-primary-blue text-white py-16 lg:py-24 rounded-[40px]">
