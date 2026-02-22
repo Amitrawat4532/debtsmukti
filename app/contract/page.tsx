@@ -60,7 +60,7 @@ export default function ContractsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {contracts.map((contract, index) => (
-            <div key={index} className="border border-border rounded-[24px] p-6 hover:shadow-lg transition-shadow">
+            <div key={index} className="border border-border rounded-3xl p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-start gap-4">
                 <div className="text-primary shrink-0 mt-1">
                   <FileText size={32} />

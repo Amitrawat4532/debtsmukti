@@ -125,7 +125,7 @@ const socialLinks = [
 const Footer = () => {
   return (
     <footer className="bg-primary-blue text-white w-full mt-[100px]">
-      <div className="max-w-[1280px] mx-auto px-5">
+      <div className="max-w-7xl mx-auto px-5">
         {/* ─── DESKTOP LAYOUT ─── */}
         <div className="hidden md:block">
           {/* Top: Logo centered */}

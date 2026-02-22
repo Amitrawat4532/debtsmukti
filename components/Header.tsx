@@ -12,7 +12,7 @@ const Header = () => {
     <>
       {/* Top info bar — scrolls away normally */}
       <div className="bg-primary-blue">
-        <div className="container px-5 py-4 flex justify-center md:justify-between items-center max-w-[1280px] mx-auto">
+        <div className="container px-5 py-4 flex justify-center md:justify-between items-center max-w-7xl mx-auto">
           <p className="text-white text-[16px] font-bold hidden md:block">{siteData.tagline}</p>
           <div className="flex items-center">
             <div className="flex items-center gap-2 border-r border-white pr-4">
@@ -67,13 +67,13 @@ const Header = () => {
 
       {/* Sticky Nav — this is now a sibling, not a child, so sticky works correctly */}
       <header className="bg-white py-5 md:py-10 px-5 sticky top-0 z-50">
-        <div className="flex items-center justify-between max-w-[1280px] mx-auto px-5">
+        <div className="flex items-center justify-between max-w-7xl mx-auto px-5">
           <Link href="/">
             <Image src={siteLogo.logoHeader} alt="logo" width={35} height={35} />
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-[50px]">
+          <nav className="hidden md:flex items-center gap-12.5">
             {navLinks.map((link) => (
               <Link
                 key={link.href + link.label}
@@ -85,7 +85,7 @@ const Header = () => {
             ))}
             <Link
               href="/contact"
-              className="bg-primary-blue text-white px-5 py-[6px] rounded-full text-[14px] font-bold hover:bg-opacity-90 transition-all"
+              className="bg-primary-blue text-white px-5 py-1.5 rounded-full text-[14px] font-bold hover:bg-opacity-90 transition-all"
             >
               Contact Us
             </Link>

@@ -142,7 +142,7 @@ export default function WhyDebtMukti() {
           {/* Sticky image block */}
           <div className="w-full shrink-0">
             <div className="flex justify-center">
-              <span className="text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-[16px] py-[6px] rounded-full w-fit">
+              <span className="text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-4 py-1.5 rounded-full w-fit">
                 About Us
               </span>
             </div>
@@ -184,7 +184,7 @@ export default function WhyDebtMukti() {
                     key={i}
                     ref={(el) => { mobileCardRefs.current[i] = el; }}
                     onClick={() => handleClick(i)}
-                    className={`rounded-[24px] border px-[24px] py-[20px] cursor-pointer transition-all duration-200 ${
+                    className={`rounded-3xl border px-[24px] py-[20px] cursor-pointer transition-all duration-200 ${
                       activeIndex === i
                         ? "bg-primary-light-blue border-primary-light-blue"
                         : "bg-[#E5E5E5] border-[#e5e7eb] hover:border-[#c5d0ea]"
@@ -236,7 +236,7 @@ export default function WhyDebtMukti() {
             </div>
 
             <div className="w-full md:flex-1 flex flex-col gap-4 mt-0 md:-mt-[70px]">
-              <span className="md:inline-block hidden text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-[16px] py-[6px] rounded-full w-fit">
+              <span className="md:inline-block hidden text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-4 py-1.5 rounded-full w-fit">
                 About Us
               </span>
               <h2 className="text-[48px] md:block hidden font-medium text-[#111] leading-[1.1]">

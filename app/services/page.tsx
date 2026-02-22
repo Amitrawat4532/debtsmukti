@@ -94,7 +94,7 @@ export default function ServicesPage() {
           </div>
           <h1 className="text-4xl lg:text-6xl font-bold text-balance">Complete Freedom from Debt</h1>
           <p className="text-lg opacity-90 max-w-3xl mx-auto leading-relaxed">
-            Tailored solutions for every type of debt. Whether it's personal loans, credit cards, or consolidated debt, we have a proven strategy to help you regain financial control.
+            Tailored solutions for every type of debt. Whether it&apos;s personal loans, credit cards, or consolidated debt, we have a proven strategy to help you regain financial control.
           </p>
         </div>
       </section>
@@ -103,7 +103,7 @@ export default function ServicesPage() {
       <section className=" mx-auto  py-20 lg:py-28">
         <div className="text-center mb-16">
         <div className="flex justify-center">
-              <span className="text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-[16px] py-[6px] rounded-full w-fit">
+              <span className="text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-4 py-1.5 rounded-full w-fit">
                 Services
               </span>
             </div>
@@ -117,7 +117,7 @@ export default function ServicesPage() {
           {services.map((service, index) => {
             const Icon = service.icon
             return (
-              <div key={index} className="bg-primary-light-blue rounded-[24px] p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1">
+              <div key={index} className="bg-primary-light-blue rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1">
                 <div className="text-primary mb-6 bg-secondary rounded-lg w-fit  flex gap-4">
                   <Icon size={32} />
                 <h3 className="text-2xl font-bold text-primary mb-3">{service.title}</h3>
@@ -137,14 +137,14 @@ export default function ServicesPage() {
 
                 </div>
                   </div>
-<div className="relative rounded-[20px] overflow-hidden aspect-[1/1.06] w-full my-10 max-h-[284px]">
+<div className="relative rounded-[20px] overflow-hidden aspect-[1/1.06] w-full my-10 max-h-7.1">
               
                 <Image
                   
                   src={service.Image}
                   alt="Personal Loan Debt Settlement"
                   fill
-                  className="object-cover rounded-[20px] transition-opacity duration-500 w-full h-full max-h-[284px] "
+                  className="object-cover rounded-[20px] transition-opacity duration-500 w-full h-full max-h-7.1 "
                 />
             </div>
                 
@@ -162,7 +162,7 @@ export default function ServicesPage() {
         <div className=" mx-auto">
           <div className="text-center mb-20">
           <div className="flex justify-center">
-              <span className="text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-[16px] py-[6px] rounded-full w-fit">
+              <span className="text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-4 py-1.5 rounded-full w-fit">
                 Work
               </span>
             </div>
@@ -177,7 +177,7 @@ export default function ServicesPage() {
               const StepIcon = step.icon
               return (
                 <div key={index} className="relative">
-                  <div className={`rounded-[24px] p-8 h-full `} 
+                  <div className={`rounded-3xl p-8 h-full `} 
   style={{ backgroundImage: `url(${step.img})` , backgroundSize: 'cover' }}
 > 
                     <div className=" rounded-lg w-fit p-3 mb-6 flex gap-2">
@@ -188,7 +188,7 @@ export default function ServicesPage() {
                     <p className="text-white opacity-80 leading-relaxed text-sm">{step.description}</p>
                   </div>
                   {/* {index < processSteps.length - 1 && (
-                    <div className="hidden lg:block absolute top-1/2 -right-[35px] transform -translate-y-1/2">
+                    <div className="hidden lg:block absolute top-1/2 -right-8.75 transform -translate-y-1/2">
                       <ArrowRight size={40} className="text-black font-bold" />
                     </div>
                   )} */}

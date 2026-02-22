@@ -73,11 +73,11 @@ export default function Services() {
     <section className="bg-white ">
       <div className=" mx-auto flex flex-col-reverse md:flex-row items-center gap-0 md:gap-30">
         {/* ── LEFT: Image ── */}
-        <div className="w-full md:flex-1 flex flex-col gap-4 mt-0 md:-mt-[70px]">
+        <div className="w-full md:flex-1 flex flex-col gap-4 mt-0 md:-mt-17.5">
           {/* Badge */}
           <div className="   md:hidden flex justify-center">
 
-          <span className="md:inline-block hidden  text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-[16px] py-[6px] rounded-full w-fit">
+          <span className="md:inline-block hidden  text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-4 py-1.5 rounded-full w-fit">
             Services
           </span>
           </div>
@@ -87,7 +87,7 @@ export default function Services() {
             Our Services
           </h2>
 
-          <h3 className="text-[16px] hidden md:block  font-medium text-[#6B6969] leading-[25px]  max-w-[350px] text-center md:text-left">
+          <h3 className="text-[16px] hidden md:block  font-medium text-[#6B6969] leading-6.25  max-w-87.5 text-center md:text-left">
             No hidden fees. No fine-print tricks. You’ll always know what’s
             happening, why it’s happening, and what comes next.
           </h3>
@@ -96,14 +96,14 @@ export default function Services() {
   {services.map((service, index) => (
     <div
       key={index}
-      className="flex items-center gap-3 rounded-[16px] py-4 px-[14px] border border-[#f1eded]"
+      className="flex items-center gap-3 rounded-2xl py-4 px-3.5 border border-[#f1eded]"
     >
       <div>{service.icon}</div>
       <p>{service.title}</p>
     </div>
   ))}
 </div>
-<button className="bg-primary-light-blue text-black px-4 py-[16px] flex justify-center gap-3  rounded-full text-[16px]  hover:bg-opacity-90 transition-all w-full md:w-[45%]">
+<button className="bg-primary-light-blue text-black px-4 py-4 flex justify-center gap-3  rounded-full text-[16px]  hover:bg-opacity-90 transition-all w-full md:w-[45%]">
 Get Free Consultation <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 11.7261C4 11.3464 4.28215 11.0326 4.64823 10.9829L4.75 10.9761H19.75C20.1642 10.9761 20.5 11.3119 20.5 11.7261C20.5 12.1058 20.2178 12.4196 19.8518 12.4692L19.75 12.4761L4.75 12.4761C4.33579 12.4761 4 12.1403 4 11.7261Z" fill="#111111"/>
 <path d="M13.171 6.23296C12.8775 5.9407 12.8765 5.46582 13.1687 5.1723C13.4344 4.90546 13.851 4.88036 14.1451 5.09758L14.2294 5.17002L20.2794 11.194C20.547 11.4605 20.5714 11.8786 20.3524 12.1727L20.2794 12.2569L14.2294 18.2819C13.9359 18.5742 13.4611 18.5732 13.1688 18.2797C12.9031 18.0129 12.8797 17.5962 13.0982 17.303L13.171 17.2191L18.687 11.7252L13.171 6.23296Z" fill="#111111"/>
@@ -117,7 +117,7 @@ Get Free Consultation <svg width="24" height="24" viewBox="0 0 24 24" fill="none
 
         <div className="w-full md:w-[40%] shrink-0">
           <div className="   md:hidden flex justify-center">
-            <span className="text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-[16px] py-[6px] rounded-full w-fit">
+            <span className="text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-4 py-1.5 rounded-full w-fit">
               Services
             </span>
           </div>
@@ -125,11 +125,11 @@ Get Free Consultation <svg width="24" height="24" viewBox="0 0 24 24" fill="none
           <h2 className="text-[32px] mt-5 mb-10 text-center md:hidden font-medium text-[#111] leading-[1.1]">
             Our Services
           </h2>
-          <h3 className="text-[16px] block md:hidden  font-medium text-[#6B6969] leading-[25px] mb-5 px-5 text-center md:text-left">
+          <h3 className="text-[16px] block md:hidden  font-medium text-[#6B6969] leading-6.25 mb-5 px-5 text-center md:text-left">
             No hidden fees. No fine-print tricks. You’ll always know what’s
             happening, why it’s happening, and what comes next.
           </h3>
-          <div className="bg-[#F5F5F5] rounded-[22px] p-5 md:p-[50px] shadow-sm">
+          <div className="bg-[#F5F5F5] rounded-[22px] p-5 md:p-12.5 shadow-sm">
             <div className="relative rounded-xl overflow-hidden aspect-[1/1.06] w-full">
               
                 <Image
@@ -137,7 +137,7 @@ Get Free Consultation <svg width="24" height="24" viewBox="0 0 24 24" fill="none
                   src="/aboutus-2.png"
                   alt="Personal Loan Debt Settlement"
                   fill
-                  className="object-cover rounded-[10px] transition-opacity duration-500 w-full h-full max-w-[450px] max-h-[450px]"
+                  className="object-cover rounded-[10px] transition-opacity duration-500 w-full h-full max-w-112.5 max-h-112.5"
                 />
             </div>
           </div>

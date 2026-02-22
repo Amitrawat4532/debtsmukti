@@ -7,9 +7,9 @@ type Props = {};
 
 const Banner = (props: Props) => {
   return (
-    <section className="flex justify-between mt-[30px] md:mt-[80px] flex-col-reverse md:flex-row">
+    <section className="flex justify-between mt-7.5 md:mt-20 flex-col-reverse md:flex-row">
         
-      <div className="flex flex-col gap-[32px] justify-center max-w-[590px]">
+      <div className="flex flex-col gap-8 justify-center max-w-147.5">
         <h1 className="text-primary-blue text-[28px] font-bold hidden md:block">
           Debt Mukti: Your Path to Stress-Free Debt Freedom
         </h1>
@@ -18,10 +18,10 @@ const Banner = (props: Props) => {
           resolve your loans without stress, endless paperwork, or uncertainty.
         </p>
         <div className="flex items-center gap-2 flex-col md:flex-row w-full">
-          <button className="bg-primary-blue text-white px-8 py-[16px] w-full rounded-full text-[18px]  hover:bg-opacity-90 transition-all">
+          <button className="bg-primary-blue text-white px-8 py-4 w-full rounded-full text-[18px]  hover:bg-opacity-90 transition-all">
             Get Free Consultation
           </button>
-          <button className="bg-primary-light-blue text-black px-8 py-[16px] w-full rounded-full text-[18px]  hover:bg-opacity-90 transition-all">
+          <button className="bg-primary-light-blue text-black px-8 py-4 w-full rounded-full text-[18px]  hover:bg-opacity-90 transition-all">
             Know More
           </button>
           
@@ -120,7 +120,7 @@ const Banner = (props: Props) => {
           </div>
       </div>
       
-      <div className="bg-primary-blue rounded-[20px] py-[13px] px-5 my-[30px] md:my-0">
+      <div className="bg-primary-blue rounded-[20px] py-3.25 px-5 my-7.5 md:my-0">
         <Image src="/banner-img.png" alt="banner img" width={510} height={500} />
       </div>
       <h1 className="text-black text-[24px] text-center font-bold md:hidden">

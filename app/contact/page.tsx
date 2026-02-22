@@ -77,19 +77,6 @@ export default function ContactPage() {
 
     setSubmitted(true)
     setSubmitting(false)
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      whatsapp: '',
-      employmentStatus: '',
-      loanTypes: [],
-      loanTypeOther: '',
-      loanAmount: '',
-      preferredCallTimes: [],
-      message: '',
-    })
-    setTimeout(() => setSubmitted(false), 6000)
   }
 
   const inputClass =
@@ -111,7 +98,7 @@ export default function ContactPage() {
       {/* Contact Information & Form */}
       <section className="mx-auto py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-3 gap-12">
         {/* Contact Info */}
-        <div className="lg:col-span-1 space-y-8 bg-primary-light-blue bg-opacity-30 rounded-[24px] p-8">
+        <div className="lg:col-span-1 space-y-8 bg-primary-light-blue bg-opacity-30 rounded-3xl p-8">
           <div>
             <h3 className="text-2xl font-bold text-primary mb-8">Contact Information</h3>
             <div className="space-y-6">
@@ -166,17 +153,46 @@ export default function ContactPage() {
 
         {/* Contact Form */}
         <div className="lg:col-span-2">
-          <div className="bg-primary-blue bg-opacity-30 rounded-[24px] p-8">
+          <div className="bg-primary-blue bg-opacity-30 rounded-3xl p-8">
+            {submitted ? (
+            <h3 className="text-2xl font-bold text-white mb-6"></h3>
+
+            ) : (
             <h3 className="text-2xl font-bold text-white mb-6">Send us a Message</h3>
 
-            {submitted && (
-              <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
-                <p className="text-green-800">
-                  Thank you! Your message has been sent successfully. We&apos;ll get back to you soon.
-                </p>
-              </div>
             )}
 
+            {submitted ? (
+              <div className="flex flex-col items-center justify-center py-16 text-center space-y-4">
+                <div className="w-16 h-16 rounded-full bg-green-500 flex items-center justify-center text-white text-3xl font-bold">
+                  ✓
+                </div>
+                <h4 className="text-2xl font-bold text-white">Message Sent!</h4>
+                <p className="text-white/80 max-w-sm">
+                  Thank you for reaching out. Our team will get back to you shortly.
+                </p>
+                <button
+                  onClick={() => {
+                    setSubmitted(false)
+                    setFormData({
+                      name: '',
+                      email: '',
+                      phone: '',
+                      whatsapp: '',
+                      employmentStatus: '',
+                      loanTypes: [],
+                      loanTypeOther: '',
+                      loanAmount: '',
+                      preferredCallTimes: [],
+                      message: '',
+                    })
+                  }}
+                  className="mt-4 px-6 py-2 border border-white/50 text-white rounded-full text-sm hover:bg-white/10 transition-colors"
+                >
+                  Send another message
+                </button>
+              </div>
+            ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Row 1: Name + Email */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -234,8 +250,8 @@ export default function ContactPage() {
                     value={formData.whatsapp}
                     onChange={handleChange}
                     className={inputClass}
-                    required
                     placeholder="(123) 456-7890"
+                    required
                   />
                 </div>
               </div>
@@ -388,11 +404,12 @@ export default function ContactPage() {
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full bg-primary-light-blue text-black py-3 rounded-[24px] font-bold hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
+                className="w-full bg-primary-light-blue text-black py-3 rounded-3xl font-bold hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 {submitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
+            )}
           </div>
         </div>
       </section>

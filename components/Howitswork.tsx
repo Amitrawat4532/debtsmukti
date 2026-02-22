@@ -20,7 +20,7 @@ const Howitswork = () => {
     <section className="bg-white flex flex-col gap-10">
     <div className="flex flex-col gap-2">
       <div className="flex justify-center">
-        <span className="  text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-[16px] py-[6px] rounded-full w-fit">
+        <span className="  text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-4 py-1.5 rounded-full w-fit">
         Process
         </span>
       </div>
@@ -33,7 +33,7 @@ const Howitswork = () => {
       A simple, stress-free process designed to get you out of debt faster.
       </h3>
     </div>
-    <div className='relative w-full h-[420px] rounded-[24px] overflow-hidden'>
+    <div className='relative w-full h-[420px] rounded-3xl overflow-hidden'>
         <Image src="/howitsworks.png" alt="how-it-work" fill className='object-cover' />
     </div>
     <div className='flex gap-5 flex-col md:flex-row mt-14'>

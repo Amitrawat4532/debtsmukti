@@ -35,7 +35,7 @@ const FAQs = () => {
 
       <div className="space-y-6">
         {faqs.map((faq, index) => (
-          <div key={index} className="border border-border rounded-[24px] p-6">
+          <div key={index} className="border border-border rounded-3xl p-6">
             <button
               onClick={() => toggleFAQ(index)}
               className="w-full flex items-center justify-between gap-4 text-left hover:opacity-80 transition-opacity"
@@ -45,7 +45,7 @@ const FAQs = () => {
               </h3>
               <ChevronDown
                 size={24}
-                className="flex-shrink-0 transition-transform duration-300"
+                className="shrink-0 transition-transform duration-300"
                 style={{
                   color: '#0F2A47',
                   transform: openIndex === index ? 'rotate(180deg)' : 'rotate(0deg)'

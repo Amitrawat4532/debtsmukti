@@ -54,7 +54,7 @@ const Testimonials = () => {
     <section className="bg-white  flex flex-col gap-10">
       <div className="flex flex-col gap-2">
         <div className="flex justify-center">
-          <span className="  text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-[16px] py-[6px] rounded-full w-fit">
+          <span className="  text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-4 py-1.5 rounded-full w-fit">
             Testimonals
           </span>
         </div>
@@ -98,7 +98,7 @@ const Testimonials = () => {
         return (
           <SwiperSlide key={index} className="h-auto!">
             <div
-              className={`border rounded-[24px] min-h-[475px] px-10 py-[32px] transition-colors duration-300 h-auto! flex flex-col justify-center ${
+              className={`border rounded-3xl min-h-[475px] px-10 py-[32px] transition-colors duration-300 h-auto! flex flex-col justify-center ${
                 isActive
                   ? "bg-[#0F2A47] border-[#0F2A47] text-white"
                   : "border-[#0F2A47] bg-white text-[#111]"

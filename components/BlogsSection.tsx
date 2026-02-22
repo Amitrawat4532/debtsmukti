@@ -37,7 +37,7 @@ const BlogsSection = ({isHidden, limit = 2}: {isHidden: boolean, limit?: number}
     <div className="w-full shrink-0">
         {!isHidden && (<>
             <div className="flex justify-center">
-              <span className="text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-[16px] py-[6px] rounded-full w-fit">
+              <span className="text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-4 py-1.5 rounded-full w-fit">
               Our Blogs
               </span>
             </div>
