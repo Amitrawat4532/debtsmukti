@@ -1,11 +1,9 @@
 import { siteData } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
-type Props = {};
 
-const Banner = (props: Props) => {
+const Banner = () => {
   return (
     <section className="flex justify-between mt-7.5 md:mt-20 flex-col-reverse md:flex-row">
         
@@ -18,12 +16,12 @@ const Banner = (props: Props) => {
           resolve your loans without stress, endless paperwork, or uncertainty.
         </p>
         <div className="flex items-center gap-2 flex-col md:flex-row w-full">
-          <button className="bg-primary-blue text-white px-8 py-4 w-full rounded-full text-[18px]  hover:bg-opacity-90 transition-all">
+          <Link href='/contact' className="bg-primary-blue text-white px-8 py-4 w-full rounded-full text-[18px]  hover:bg-opacity-90 transition-all">
             Get Free Consultation
-          </button>
-          <button className="bg-primary-light-blue text-black px-8 py-4 w-full rounded-full text-[18px]  hover:bg-opacity-90 transition-all">
+          </Link>
+          <Link href='services' className="bg-primary-light-blue text-black px-8 py-4 w-full rounded-full text-[18px]  hover:bg-opacity-90 transition-all text-center">
             Know More
-          </button>
+          </Link>
           
         </div>
         <div className=" items-center gap-4 hidden md:flex">
