@@ -69,7 +69,7 @@ const Header = () => {
       <header className="bg-white py-5 md:py-10 px-5 sticky top-0 z-50">
         <div className="flex items-center justify-between max-w-7xl mx-auto px-5">
           <Link href="/">
-            <Image src={siteLogo.logoHeader} alt="logo" width={35} height={35} />
+            <Image src={siteLogo.logoHeader} alt="logo" width={100} height={100} />
           </Link>
 
           {/* Desktop Nav */}

@@ -243,8 +243,8 @@ const Footer = () => {
               <Image
                 src={siteLogo.logoFooter}
                 alt="logo"
-                width={60}
-                height={60}
+                width={100}
+                height={100}
               />
             </Link>
             <div className="flex items-center gap-2.5">

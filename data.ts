@@ -23,8 +23,8 @@ export const navLinks = [
   
 
   export const siteLogo= {
-    logoHeader: '/logoheader.png',
-    logoFooter: '/logofooter.png',
+    logoHeader: '/logo.png',
+    logoFooter: '/logo.png',
   }
 
 //   FOOTER NAVIGATION LINKS
