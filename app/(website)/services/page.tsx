@@ -1,9 +1,9 @@
+'use client'
 import Link from 'next/link'
 import { CheckCircle, Briefcase, BarChart3, ArrowRight, Shield, Clock, Zap } from 'lucide-react'
 import Testimonials from '@/components/Testimonials'
 import Downloadsection from '@/components/Downloadsection'
 import Image from 'next/image'
-
 
 
 const services = [

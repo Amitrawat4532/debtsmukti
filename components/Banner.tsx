@@ -25,7 +25,9 @@ const Banner = () => {
           
         </div>
         <div className=" items-center gap-4 hidden md:flex">
-            <Link href={siteData.instagram}>
+            <Link href={siteData.instagram} 
+                  aria-label="instagram"
+            >
               <svg
                 width="28"
                 height="28"
@@ -46,7 +48,9 @@ const Banner = () => {
               </svg>
             </Link>
 
-            <Link href={siteData.facebook}>
+            <Link href={siteData.facebook}
+                  aria-label="facebook"
+            >
               <svg
                 width="28"
                 height="28"
@@ -67,7 +71,9 @@ const Banner = () => {
               </svg>
             </Link>
 
-            <Link href={siteData.twitter}>
+            <Link href={siteData.twitter}
+                  aria-label="twitter"
+            >
               <svg
                 width="28"
                 height="28"
@@ -87,7 +93,9 @@ const Banner = () => {
                 />
               </svg>
             </Link>
-            <Link href={siteData.linkedin}>
+            <Link href={siteData.linkedin}
+                  aria-label="linkedin"
+            >
               <svg
                 width="28"
                 height="28"

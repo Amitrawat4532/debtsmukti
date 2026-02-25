@@ -112,12 +112,16 @@ const Header = () => {
             </div>
           </div>
           <div className="items-center gap-4 hidden md:flex">
-            <Link href={siteData.instagram}>
+            <Link href={siteData.instagram} 
+                  aria-label="instagram"
+            >
               <svg width="20" height="20" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.25751 0.649414H2.53617C1.3541 0.649414 0.649414 1.3541 0.649414 2.53617V5.25426C0.649414 6.43957 1.3541 7.14426 2.53617 7.14426H5.25426C6.43632 7.14426 7.14101 6.43957 7.14101 5.25751V2.53617C7.14426 1.3541 6.43957 0.649414 5.25751 0.649414ZM3.89684 5.15684C3.20189 5.15684 2.63684 4.59179 2.63684 3.89684C2.63684 3.20189 3.20189 2.63684 3.89684 2.63684C4.59179 2.63684 5.15684 3.20189 5.15684 3.89684C5.15684 4.59179 4.59179 5.15684 3.89684 5.15684ZM5.81931 2.23416C5.80307 2.27313 5.78034 2.30885 5.75111 2.34132C5.71864 2.37055 5.68292 2.39328 5.64395 2.40952C5.60498 2.42575 5.56276 2.4355 5.52055 2.4355C5.43287 2.4355 5.35168 2.40302 5.28998 2.34132C5.26075 2.30885 5.23802 2.27313 5.22179 2.23416C5.20555 2.19519 5.19581 2.15297 5.19581 2.11075C5.19581 2.06854 5.20555 2.02632 5.22179 1.98735C5.23802 1.94514 5.26075 1.91266 5.28998 1.88019C5.36467 1.8055 5.47833 1.76977 5.58225 1.79251C5.60498 1.79575 5.62446 1.80225 5.64395 1.81199C5.66343 1.81849 5.68292 1.82823 5.7024 1.84122C5.71864 1.85096 5.73488 1.8672 5.75111 1.88019C5.78034 1.91266 5.80307 1.94514 5.81931 1.98735C5.83555 2.02632 5.84529 2.06854 5.84529 2.11075C5.84529 2.15297 5.83555 2.19519 5.81931 2.23416Z" fill="white"/>
               </svg>
             </Link>
-            <Link href={siteData.facebook}>
+            <Link href={siteData.facebook}
+                  aria-label="facebook"
+            >
               <svg width="20" height="20" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_42_1054)">
                   <path d="M5.8456 0.649414H4.87138C4.44074 0.649414 4.02774 0.820483 3.72324 1.12499C3.41873 1.42949 3.24766 1.84249 3.24766 2.27313V3.24735H2.27344V4.54632H3.24766V7.14426H4.54663V4.54632H5.52086L5.8456 3.24735H4.54663V2.27313C4.54663 2.187 4.58085 2.1044 4.64175 2.0435C4.70265 1.9826 4.78525 1.94838 4.87138 1.94838H5.8456V0.649414Z" fill="white"/>
@@ -125,7 +129,9 @@ const Header = () => {
                 <defs><clipPath id="clip0_42_1054"><rect width="7.79381" height="7.79381" fill="white"/></clipPath></defs>
               </svg>
             </Link>
-            <Link href={siteData.twitter}>
+            <Link href={siteData.twitter}
+                  aria-label="twitter"
+            >
               <svg width="20" height="20" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_42_1056)">
                   <path d="M7.46953 0.973969C7.15855 1.19332 6.81423 1.3611 6.44983 1.47082C6.25426 1.24594 5.99433 1.08655 5.70521 1.01421C5.41609 0.941871 5.11173 0.960068 4.83329 1.06634C4.55485 1.17262 4.31577 1.36184 4.14838 1.60842C3.98099 1.855 3.89337 2.14705 3.89736 2.44505V2.76979C3.32667 2.78459 2.76118 2.65802 2.25124 2.40136C1.74131 2.14469 1.30277 1.7659 0.97468 1.29871C0.97468 1.29871 -0.324289 4.22139 2.59839 5.52036C1.92959 5.97434 1.13288 6.20197 0.325195 6.16985C3.24788 7.79356 6.82004 6.16985 6.82004 2.43531C6.81974 2.34485 6.81104 2.25462 6.79406 2.16577C7.12549 1.83892 7.35938 1.42624 7.46953 0.973969Z" fill="white"/>
@@ -133,7 +139,9 @@ const Header = () => {
                 <defs><clipPath id="clip0_42_1056"><rect width="7.79381" height="7.79381" fill="white"/></clipPath></defs>
               </svg>
             </Link>
-            <Link href={siteData.linkedin}>
+            <Link href={siteData.linkedin}
+                  aria-label="linkedin"
+            >
               <svg width="20" height="20" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_42_1058)">
                   <path d="M5.19552 2.59766C5.71229 2.59766 6.20788 2.80294 6.57329 3.16835C6.9387 3.53375 7.14398 4.02935 7.14398 4.54611V6.81931H5.84501V4.54611C5.84501 4.37386 5.77658 4.20866 5.65478 4.08686C5.53298 3.96505 5.36778 3.89663 5.19552 3.89663C5.02327 3.89663 4.85807 3.96505 4.73627 4.08686C4.61447 4.20866 4.54604 4.37386 4.54604 4.54611V6.81931H3.24707V4.54611C3.24707 4.02935 3.45235 3.53375 3.81776 3.16835C4.18317 2.80294 4.67876 2.59766 5.19552 2.59766V2.59766Z" fill="white"/>
@@ -177,7 +185,7 @@ const Header = () => {
           <button
             onClick={toggleMenu}
             className="md:hidden p-2 py-0 hover:bg-gray-100 rounded-lg transition-colors z-50 relative"
-            aria-label="Toggle menu"
+            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
           >
             {isOpen ? (
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -197,6 +205,7 @@ const Header = () => {
           className={`md:hidden fixed inset-0 bg-black/40 z-40 transition-opacity duration-300 ${
             isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
+          aria-label="Close navigation menu"
         />
 
         {/* Mobile Slide-in Panel */}
@@ -210,6 +219,7 @@ const Header = () => {
           <button
           onClick={() => setIsOpen(false)}
           className="w-full flex justify-end"
+          aria-label="Close navigation menu"
         ><svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 6L6 18M6 6L18 18" stroke="#fff" strokeWidth="2.5" strokeLinecap="round"/>
               </svg></button>

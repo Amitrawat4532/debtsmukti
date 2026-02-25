@@ -59,13 +59,13 @@ export default function WhyDebtMukti() {
   useEffect(() => {
     const raf = requestAnimationFrame(() => updateFill(activeIndex));
     return () => cancelAnimationFrame(raf);
-  }, [activeIndex, isMobile]);
+  },);
 
   useEffect(() => {
     const onResize = () => updateFill(activeIndex);
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
-  }, [activeIndex, isMobile]);
+  },);
 
   // ── Desktop: pinned scroll tracking ───────────────────────────
   useEffect(() => {
@@ -136,7 +136,7 @@ export default function WhyDebtMukti() {
   // ── Mobile layout ──────────────────────────────────────────────
   if (isMobile) {
     return (
-      <section className="bg-white mt-[100px]">
+      <section className="bg-white mt-25">
         <div className="mx-auto flex flex-col items-center gap-12">
 
           {/* Sticky image block */}
@@ -171,7 +171,7 @@ export default function WhyDebtMukti() {
             <div className="flex gap-0 mt-1">
               <div
                 ref={railRef}
-                className="shrink-0 w-[11px] bg-[#D9D9D9] rounded-full mr-3.5 relative self-stretch"
+                className="shrink-0 w-2.75 bg-[#D9D9D9] rounded-full mr-3.5 relative self-stretch"
               >
                 <div
                   className="absolute top-0 left-0 w-full bg-[#204E8C] rounded-full transition-[height] duration-500 ease-in-out"
@@ -184,13 +184,13 @@ export default function WhyDebtMukti() {
                     key={i}
                     ref={(el) => { mobileCardRefs.current[i] = el; }}
                     onClick={() => handleClick(i)}
-                    className={`rounded-3xl border px-[24px] py-[20px] cursor-pointer transition-all duration-200 ${
+                    className={`rounded-3xl border px-6 py-5 cursor-pointer transition-all duration-200 ${
                       activeIndex === i
                         ? "bg-primary-light-blue border-primary-light-blue"
                         : "bg-[#E5E5E5] border-[#e5e7eb] hover:border-[#c5d0ea]"
                     }`}
                   >
-                    <p className="text-[20px] font-bold text-[#111] mb-[5px]">
+                    <p className="text-[20px] font-bold text-[#111] mb-1.25">
                       {reason.title}
                     </p>
                     <p className="text-[16px] text-[#000000] leading-relaxed">
@@ -218,7 +218,7 @@ export default function WhyDebtMukti() {
           <div className="mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-30">
 
             <div className="w-full md:w-[40%] shrink-0">
-              <div className="bg-[#F5F5F5] rounded-[22px] p-5 md:p-[50px] shadow-sm">
+              <div className="bg-[#F5F5F5] rounded-[22px] p-5 md:p-12.5 shadow-sm">
                 <div className="relative rounded-xl overflow-hidden aspect-[1/1.06] w-full">
                   {reasons.map((reason, i) => (
                     <Image
@@ -226,7 +226,7 @@ export default function WhyDebtMukti() {
                       src={reason.image}
                       alt={reason.title}
                       fill
-                      className={`object-cover rounded-[10px] transition-opacity duration-500 w-full h-full max-w-[450px] max-h-[450px] ${
+                      className={`object-cover rounded-[10px] transition-opacity duration-500 w-full h-full max-w-112.5 max-h-112.5 ${
                         activeIndex === i ? "opacity-100" : "opacity-0"
                       }`}
                     />
@@ -235,7 +235,7 @@ export default function WhyDebtMukti() {
               </div>
             </div>
 
-            <div className="w-full md:flex-1 flex flex-col gap-4 mt-0 md:-mt-[70px]">
+            <div className="w-full md:flex-1 flex flex-col gap-4 mt-0 md:-mt-17.5">
               <span className="md:inline-block hidden text-[14px] font-medium tracking-[0.14em] uppercase text-[#031B1D] border border-[#f1eded] px-4 py-1.5 rounded-full w-fit">
                 About Us
               </span>
@@ -246,7 +246,7 @@ export default function WhyDebtMukti() {
               <div className="flex gap-0 mt-1">
                 <div
                   ref={railRef}
-                  className="shrink-0 w-[11px] bg-[#D9D9D9] rounded-full mr-3.5 relative self-stretch"
+                  className="shrink-0 w-2.75 bg-[#D9D9D9] rounded-full mr-3.5 relative self-stretch"
                 >
                   <div
                     className="absolute top-0 left-0 w-full bg-[#204E8C] rounded-full transition-[height] duration-500 ease-in-out"
@@ -259,13 +259,13 @@ export default function WhyDebtMukti() {
                       key={i}
                       ref={(el) => { desktopCardRefs.current[i] = el; }}
                       onClick={() => handleClick(i)}
-                      className={`rounded-[20px] border px-[24px] py-[20px] cursor-pointer transition-all duration-200 ${
+                      className={`rounded-[20px] border px-6 py-5 cursor-pointer transition-all duration-200 ${
                         activeIndex === i
                           ? "bg-primary-light-blue border-primary-light-blue"
                           : "bg-[#E5E5E5] border-[#e5e7eb] hover:border-[#c5d0ea]"
                       }`}
                     >
-                      <p className="text-[20px] font-bold text-[#111] mb-[5px]">
+                      <p className="text-[20px] font-bold text-[#111] mb-1.25">
                         {reason.title}
                       </p>
                       <p className="text-[16px] text-[#000000] leading-relaxed">

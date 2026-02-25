@@ -1,3 +1,4 @@
+
 export const siteData = {
     tagline: "Tagline Here",
     phone: "(629) 555-0129",
@@ -43,3 +44,100 @@ export const navLinks = [
     { label: 'Blog', href: '/blog' },
     { label: 'Contact', href: '/contact' },
   ]
+
+
+
+export const seoData = {
+  homepage:{
+     title: "About Us | Debt Mukti",
+  description: "Learn about Luv Press - our story, values, and mission. From Style to Stories — We Bring What You Love. Discover how we create premium press-on nails.",
+  keywords: ["about Luv Press", "nail company", "beauty brand", "press-on nails story"],
+  openGraph: {
+    title: "About Us | Luv Press",
+    description: "Learn about Luv Press - our story, values, and mission to bring you premium press-on nails.",
+    type: "website",
+  },
+  alternates: {
+    canonical: "/about",
+  },
+  },
+  about: {
+    title: "About Us | Debt Mukti",
+  description: "Learn about Luv Press - our story, values, and mission. From Style to Stories — We Bring What You Love. Discover how we create premium press-on nails.",
+  keywords: ["about Luv Press", "nail company", "beauty brand", "press-on nails story"],
+  openGraph: {
+    title: "About Us | Luv Press",
+    description: "Learn about Luv Press - our story, values, and mission to bring you premium press-on nails.",
+    type: "website",
+  },
+  alternates: {
+    canonical: "/about",
+  },
+  },
+  services: {
+   title: "About Us | Debt Mukti",
+  description: "Learn about Luv Press - our story, values, and mission. From Style to Stories — We Bring What You Love. Discover how we create premium press-on nails.",
+  keywords: ["about Luv Press", "nail company", "beauty brand", "press-on nails story"],
+  openGraph: {
+    title: "About Us | Luv Press",
+    description: "Learn about Luv Press - our story, values, and mission to bring you premium press-on nails.",
+    type: "website",
+  },
+  alternates: {
+    canonical: "/about",
+  },
+  },
+  contact: {
+    title: "About Us | Debt Mukti",
+  description: "Learn about Luv Press - our story, values, and mission. From Style to Stories — We Bring What You Love. Discover how we create premium press-on nails.",
+  keywords: ["about Luv Press", "nail company", "beauty brand", "press-on nails story"],
+  openGraph: {
+    title: "About Us | Luv Press",
+    description: "Learn about Luv Press - our story, values, and mission to bring you premium press-on nails.",
+    type: "website",
+  },
+  alternates: {
+    canonical: "/about",
+  },
+  },
+  contract :{
+   title: "About Us | Debt Mukti",
+  description: "Learn about Luv Press - our story, values, and mission. From Style to Stories — We Bring What You Love. Discover how we create premium press-on nails.",
+  keywords: ["about Luv Press", "nail company", "beauty brand", "press-on nails story"],
+  openGraph: {
+    title: "About Us | Luv Press",
+    description: "Learn about Luv Press - our story, values, and mission to bring you premium press-on nails.",
+    type: "website",
+  },
+  alternates: {
+    canonical: "/about",
+  },
+  },
+  blogs : {
+   title: "About Us | Debt Mukti",
+  description: "Learn about Luv Press - our story, values, and mission. From Style to Stories — We Bring What You Love. Discover how we create premium press-on nails.",
+  keywords: ["about Luv Press", "nail company", "beauty brand", "press-on nails story"],
+  openGraph: {
+    title: "About Us | Luv Press",
+    description: "Learn about Luv Press - our story, values, and mission to bring you premium press-on nails.",
+    type: "website",
+  },
+  alternates: {
+    canonical: "/about",
+  },
+  },
+  payments :{
+   title: "About Us | Debt Mukti",
+  description: "Learn about Luv Press - our story, values, and mission. From Style to Stories — We Bring What You Love. Discover how we create premium press-on nails.",
+  keywords: ["about Luv Press", "nail company", "beauty brand", "press-on nails story"],
+  openGraph: {
+    title: "About Us | Luv Press",
+    description: "Learn about Luv Press - our story, values, and mission to bring you premium press-on nails.",
+    type: "website",
+  },
+  alternates: {
+    canonical: "/about",
+  },
+  },
+
+};

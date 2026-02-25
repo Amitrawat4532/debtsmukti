@@ -7,10 +7,13 @@ import FAQs from "@/components/FAQs";
 import Howitswork from "@/components/Howitswork";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
+import { seoData } from "@/data";
+
+export const metadata = seoData.homepage;
 
 export default function Home() {
   return (
-    <div className="px-5 flex flex-col gap-[150px]">
+    <div className="px-5 flex flex-col gap-37.5">
       <Banner />
       <Achievement />
       <Aboutsection />

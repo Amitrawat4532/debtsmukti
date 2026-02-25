@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 
 const steps = [
     {
@@ -29,17 +28,17 @@ const Howitswork = () => {
       How it Work
       </h2>
 
-      <h3 className="text-[16px]   font-medium text-[#6B6969] leading-[25px]  text-center ">
+      <h3 className="text-[16px]   font-medium text-[#6B6969] leading-6.25  text-center ">
       A simple, stress-free process designed to get you out of debt faster.
       </h3>
     </div>
-    <div className='relative w-full h-[420px] rounded-3xl overflow-hidden'>
+    <div className='relative w-full h-105 rounded-3xl overflow-hidden'>
         <Image src="/howitsworks.png" alt="how-it-work" fill className='object-cover' />
     </div>
     <div className='flex gap-5 flex-col md:flex-row mt-14'>
         {steps.map((step, index) => (
             <div key={index} className='flex gap-5 '>
-                <div className='flex justify-center items-center mt-1 md:0 p-5 md:p-10  border border-[#0F2A47] md:h-25 md:w-25 h-[25px] w-[25px]  rounded-full text-[19px] md:text-[38px] font-bold text-white bg-primary-blue'>{index + 1}</div>
+                <div className='flex justify-center items-center mt-1 md:0 p-5 md:p-10  border border-[#0F2A47] md:h-25 md:w-25 h-6.25 w-6.25  rounded-full text-[19px] md:text-[38px] font-bold text-white bg-primary-blue'>{index + 1}</div>
                 <div className='flex flex-col gap-2'>
                     <h4 className='text-[20px] font-bold text-[#111]'>{step.title}</h4>
                     <p className='text-[14px] text-[#6B6969]'>{step.description}</p>

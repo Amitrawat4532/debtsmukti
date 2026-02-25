@@ -1,8 +1,9 @@
 'use client'
 
-import { siteData } from '@/data'
+import {  siteData } from '@/data'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import { FormEvent, useState } from 'react'
+
 
 const GOOGLE_FORM_ACTION =
   'https://docs.google.com/forms/d/e/1FAIpQLSezRHTfvRhqgj-AYrSPc0mMa_sQq2mLce57ocgBVYhJoyjSGg/formResponse'
@@ -71,6 +72,7 @@ export default function ContactPage() {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: body.toString(),
       })
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (_) {
       // no-cors fetch throws on network errors; success returns opaque response
     }

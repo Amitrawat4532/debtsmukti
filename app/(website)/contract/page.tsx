@@ -1,4 +1,4 @@
-import Link from 'next/link'
+'use client'
 import { Download, FileText } from 'lucide-react'
 import Downloadsection from '@/components/Downloadsection'
 

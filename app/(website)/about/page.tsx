@@ -5,6 +5,7 @@ import Image from "next/image";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
+
 const values = [
   {
     icon: Heart,

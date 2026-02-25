@@ -1,5 +1,5 @@
+'use client'
 import Downloadsection from '@/components/Downloadsection'
-import Link from 'next/link'
 // import { CreditCard, Lock, CheckCircle } from 'lucide-react'
 
 // const paymentMethods = [
