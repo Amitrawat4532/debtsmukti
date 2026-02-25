@@ -3,38 +3,38 @@ import { notFound } from "next/navigation"
 import { PortableText } from "@portabletext/react"
 import { Calendar, Clock } from "lucide-react"
 import Image from "next/image"
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 
-export async function generateMetadata(
-  { params }: { params: { slug: string } }
-): Promise<Metadata> {
+// export async function generateMetadata(
+//   { params }: { params: { slug: string } }
+// ): Promise<Metadata> {
 
-  const blog = await getBlog(params.slug);
+//   const blog = await getBlog(params.slug);
 
-  if (!blog) {
-    return {
-      title: "Blog Not Found",
-    };
-  }
+//   if (!blog) {
+//     return {
+//       title: "Blog Not Found",
+//     };
+//   }
 
-  return {
-    title: blog.title,
-    description: blog.excerpt || blog.description,
-    openGraph: {
-      title: blog.title,
-      description: blog.excerpt || blog.description,
-      images: blog.imageUrl ? [blog.imageUrl] : [],
-      type: "article",
-      publishedTime: blog.publishedAt,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: blog.title,
-      description: blog.excerpt || blog.description,
-      images: blog.imageUrl ? [blog.imageUrl] : [],
-    },
-  };
-}
+//   return {
+//     title: blog.title,
+//     description: blog.excerpt || blog.description,
+//     openGraph: {
+//       title: blog.title,
+//       description: blog.excerpt || blog.description,
+//       images: blog.imageUrl ? [blog.imageUrl] : [],
+//       type: "article",
+//       publishedTime: blog.publishedAt,
+//     },
+//     twitter: {
+//       card: "summary_large_image",
+//       title: blog.title,
+//       description: blog.excerpt || blog.description,
+//       images: blog.imageUrl ? [blog.imageUrl] : [],
+//     },
+//   };
+// }
 
 
 
