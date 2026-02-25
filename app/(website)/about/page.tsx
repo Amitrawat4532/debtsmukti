@@ -96,8 +96,8 @@ export default function AboutPage() {
 
          <section className="flex flex-col gap-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12  ">
-          <div className="text-center space-y-4 bg-primary-blue rounded-3xl p-10 max-h-131.5">
-            <div className="text-4xl font-bold text-white mb-20">
+          <div className="text-center space-y-4 bg-primary-blue rounded-3xl p-10 max-h-full md:max-h-131.5">
+            <div className="text-4xl font-bold text-white mb-5 md:mb-20">
               Our Mission
             </div>
             <p className=" opacity-80 text-white leading-relaxed text-left">
@@ -124,7 +124,7 @@ export default function AboutPage() {
           </div>
         </div>
          <div className="grid grid-cols-1 md:grid-cols-2 gap-12  ">
-          <div className="relative rounded-[20px] overflow-hidden aspect-[1/1.06] w-full max-h-131.5">
+          <div className="relative rounded-[20px] overflow-hidden aspect-[1/1.06] w-full max-h-none md:max-h-131.5 order-2 md:order-1">
             <Image
               src="/ourvision2.png"
               alt="Personal Loan Debt Settlement"
@@ -132,8 +132,8 @@ export default function AboutPage() {
               className="object-cover rounded-[20px] transition-opacity duration-500 w-full h-full "
             />
           </div>
-          <div className="text-center space-y-4 bg-primary-blue rounded-3xl p-10 max-h-131.5">
-            <div className="text-4xl font-bold text-white mb-20">
+          <div className="text-center space-y-4 bg-primary-blue rounded-3xl p-10 max-h-full md:max-h-131.5 order-1 md:order-2">
+            <div className="text-4xl font-bold text-white mb-5 md:mb-20">
               Our Vision
             </div>
             <p className=" opacity-80 text-white leading-relaxed text-left">

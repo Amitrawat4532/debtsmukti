@@ -39,7 +39,7 @@ const Howitswork = () => {
     <div className='flex gap-5 flex-col md:flex-row mt-14'>
         {steps.map((step, index) => (
             <div key={index} className='flex gap-5 '>
-                <div className='flex justify-center items-center p-10  border border-[#0F2A47] h-[100px] w-[100px] rounded-full text-[38px] font-bold text-white bg-primary-blue'>{index + 1}</div>
+                <div className='flex justify-center items-center mt-1 md:0 p-5 md:p-10  border border-[#0F2A47] md:h-25 md:w-25 h-[25px] w-[25px]  rounded-full text-[19px] md:text-[38px] font-bold text-white bg-primary-blue'>{index + 1}</div>
                 <div className='flex flex-col gap-2'>
                     <h4 className='text-[20px] font-bold text-[#111]'>{step.title}</h4>
                     <p className='text-[14px] text-[#6B6969]'>{step.description}</p>

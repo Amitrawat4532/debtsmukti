@@ -16,7 +16,7 @@ const Banner = () => {
           resolve your loans without stress, endless paperwork, or uncertainty.
         </p>
         <div className="flex items-center gap-2 flex-col md:flex-row w-full">
-          <Link href='/contact' className="bg-primary-blue text-white px-8 py-4 w-full rounded-full text-[18px]  hover:bg-opacity-90 transition-all">
+          <Link href='/contact' className="bg-primary-blue text-white text-center px-8 py-4 w-full rounded-full text-[18px]  hover:bg-opacity-90 transition-all">
             Get Free Consultation
           </Link>
           <Link href='services' className="bg-primary-light-blue text-black px-8 py-4 w-full rounded-full text-[18px]  hover:bg-opacity-90 transition-all text-center">

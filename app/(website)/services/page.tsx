@@ -178,7 +178,7 @@ export default function ServicesPage() {
               return (
                 <div key={index} className="relative">
                   <div className={`rounded-3xl p-8 h-full `} 
-  style={{ backgroundImage: `url(${step.img})` , backgroundSize: 'cover' }}
+  style={{ backgroundImage: `url(${step.img})` , backgroundSize: 'cover' , backgroundPosition: 'bottom' }}
 > 
                     <div className=" rounded-lg w-fit p-3 mb-6 flex gap-2">
                       {/* <div className="text-white text-2xl font-bold">{step.number}</div> */}

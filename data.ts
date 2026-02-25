@@ -24,7 +24,7 @@ export const navLinks = [
 
   export const siteLogo= {
     logoHeader: '/logo.png',
-    logoFooter: '/logo.png',
+    logoFooter: '/newlogo.png',
   }
 
 //   FOOTER NAVIGATION LINKS

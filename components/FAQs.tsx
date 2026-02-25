@@ -40,7 +40,7 @@ const FAQs = () => {
               onClick={() => toggleFAQ(index)}
               className="w-full flex items-center justify-between gap-4 text-left hover:opacity-80 transition-opacity cursor-pointer"
             >
-              <h3 className="text-lg font-bold" style={{ color: '#0F2A47' }}>
+              <h3 className="text-[16px] md:text-lg font-bold" style={{ color: '#0F2A47' }}>
                 {faq.question}
               </h3>
               <ChevronDown

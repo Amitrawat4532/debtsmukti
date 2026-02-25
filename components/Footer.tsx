@@ -81,32 +81,7 @@ const LinkedInIcon = () => (
   </svg>
 );
 
-// Debt Mukti Logo Mark (M shape from image)
-const LogoMark = () => (
-  <svg
-    width="48"
-    height="44"
-    viewBox="0 0 48 44"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M4 38 L4 10 L24 28 L44 10 L44 38"
-      stroke="white"
-      strokeWidth="3.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      fill="none"
-    />
-    <path
-      d="M10 44 Q24 32 38 44"
-      stroke="white"
-      strokeWidth="3.5"
-      strokeLinecap="round"
-      fill="none"
-    />
-  </svg>
-);
+
 
 // RBI Badge placeholder (circular badge)
 const RBIBadge = () => (
@@ -124,7 +99,7 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-blue text-white w-full mt-[100px]">
+    <footer className="bg-primary-blue text-white w-full mt-25">
       <div className="max-w-7xl mx-auto px-5">
         {/* ─── DESKTOP LAYOUT ─── */}
         <div className="hidden md:block">
@@ -210,7 +185,7 @@ const Footer = () => {
                   key={s.label}
                   href={s.href}
                   aria-label={s.label}
-                  className="w-[34px] h-[34px] rounded-full  flex items-center justify-center text-white/70 hover:text-white hover:border-white/60 transition-all duration-200"
+                  className="w-8.5 h-8.5 rounded-full  flex items-center justify-center text-white/70 hover:text-white hover:border-white/60 transition-all duration-200"
                 >
                   {s.icon}
                 </a>
@@ -253,7 +228,7 @@ const Footer = () => {
                   key={s.label}
                   href={s.href}
                   aria-label={s.label}
-                  className="w-[32px] h-[32px] rounded-full border border-white/30 flex items-center justify-center text-white/70 hover:text-white hover:border-white/60 transition-all duration-200"
+                  className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-white/70 hover:text-white hover:border-white/60 transition-all duration-200"
                 >
                   {s.icon}
                 </a>

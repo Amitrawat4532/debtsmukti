@@ -40,3 +40,10 @@ body {
 .mySwiper .swiper-slide {
   height: auto;
 }
+
+
+.mobile-nav-bg{
+  background-image: url('./../public/mobilenavbg.png');
+  background-size: cover;
+}
+
