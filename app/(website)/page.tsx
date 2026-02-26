@@ -9,7 +9,7 @@ import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import { seoData } from "@/data";
 
-export const metadata = seoData.homepage;
+export const metadata = seoData.home;
 
 export default function Home() {
   return (
